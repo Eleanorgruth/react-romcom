@@ -12,7 +12,6 @@ interface coverCombo {
 
 export const SavedCovers = ({ savedCovers, deleteCover }: { savedCovers: coverCombo[], deleteCover: (id: string) => void }) => {
   const coverElements = savedCovers.map((cover, index) => {
-    console.log('saved', index)
     return <SingleCover cover={cover} deleteCover={deleteCover}/>;
   });
 

@@ -15,7 +15,6 @@ export const SingleCover = ({ cover, deleteCover }: {cover: coverCombo, deleteCo
         <img className="mini-cover" src={cover.cover} />
         <h2 className="cover-title">{cover.title}</h2>
         <h3 className="tagline">A tale of <span className="tagline-1">{cover.desc1}</span> and <span className="tagline-2">{cover.desc2}</span></h3>
-        {/* <button onClick={() => deleteCover(cover.id)}>Delete</button> */}
       </div>
   );
 };
