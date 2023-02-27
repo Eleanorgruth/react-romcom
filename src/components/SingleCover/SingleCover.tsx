@@ -1,13 +1,6 @@
 import React from "react";
 import '../SavedCovers/SavedCovers.css'
-
-interface coverCombo {
-  title: string;
-  cover: string;
-  desc1: string;
-  desc2: string;
-  id: string
-}
+import { coverCombo } from "../../interfaces";
 
 export const SingleCover = ({ cover, deleteCover }: {cover: coverCombo, deleteCover: (id: string) => void }) => {
   return (

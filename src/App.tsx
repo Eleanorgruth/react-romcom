@@ -7,14 +7,7 @@ import { CreateCover } from "./components/CreateCover/CreateCover";
 import { SavedCovers } from "./components/SavedCovers/SavedCovers";
 import { Random } from "./components/Random/Random";
 import { useState } from "react";
-
-interface coverCombo {
-  title: string;
-  cover: string;
-  desc1: string;
-  desc2: string;
-  id: string
-}
+import { coverCombo } from "./interfaces";
 
 function App() {
   const [savedCovers, setSavedCovers] = useState<any[]>([])
