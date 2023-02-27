@@ -38,9 +38,13 @@ function App() {
     setSavedCovers(filteredCovers)
   }
 
+  const clearCreated = () => {
+    setCreatedCover(undefined)
+  }
+
   return (
     <div>
-      <NavBar />
+      <NavBar clearCreated={clearCreated}/>
       <Routes>
         <Route path="/" element={<Random saveCover={saveCover} createdCover={createdCover}/>}></Route>
         <Route path="/saved-covers" element={<SavedCovers savedCovers={savedCovers} deleteCover={deleteCover}/>}></Route>
