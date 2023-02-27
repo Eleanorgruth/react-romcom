@@ -2,14 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { nanoid } from "nanoid";
 import './CreateCover.css'
-
-interface coverCombo {
-  title: string;
-  cover: string;
-  desc1: string;
-  desc2: string;
-  id: string
-}
+import { coverCombo } from "../../interfaces";
 
 export const CreateCover = ({
   submitCreatedCover,

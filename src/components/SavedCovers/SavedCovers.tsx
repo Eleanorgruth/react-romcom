@@ -1,14 +1,7 @@
 import React from "react";
 import { SingleCover } from "../SingleCover/SingleCover";
 import './SavedCovers'
-
-interface coverCombo {
-  title: string;
-  cover: string;
-  desc1: string;
-  desc2: string;
-  id: string
-}
+import { coverCombo } from "../../interfaces";
 
 export const SavedCovers = ({ savedCovers, deleteCover }: { savedCovers: coverCombo[], deleteCover: (id: string) => void }) => {
   const coverElements = savedCovers.map((cover, index) => {

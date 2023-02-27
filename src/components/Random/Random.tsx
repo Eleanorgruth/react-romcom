@@ -3,13 +3,7 @@ import { covers, titles, descriptors } from "../../data";
 import pic from "../../assets/bluebrocade.jpg";
 import { nanoid } from "nanoid";
 import './Random.css'
-
-interface coverCombo {
-  title: string;
-  cover: string;
-  desc1: string;
-  desc2: string;
-}
+import { coverCombo } from "../../interfaces";
 
 export const Random = ({
   saveCover,
@@ -37,7 +31,6 @@ export const Random = ({
       descriptors[Math.floor(Math.random() * descriptors.length)];
     let randomDescriptor2 =
       descriptors[Math.floor(Math.random() * descriptors.length)];
-    console.log(randomCover);
     setTitle(randomTitle);
     setCover(randomCover);
     setDescriptor1(randomDescriptor1);
@@ -59,7 +52,7 @@ export const Random = ({
 
   return (
     <div>
-      <div style={{display: 'flex', justifyContent: 'center'}}>
+      <div style={{display: 'flex', justifyContent: 'center', marginTop: '1rem'}}>
         <button onClick={() => randomize()}>Randomize</button>
         <button
           onClick={() => saveCover(title, cover, descriptor1, descriptor2, id)}
