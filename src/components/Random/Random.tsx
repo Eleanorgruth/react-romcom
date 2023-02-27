@@ -74,7 +74,6 @@ export const Random = ({
           <span className='tagline-1'> {descriptor1}</span> and <span className='tagline-2'>{descriptor2}</span>
         </h3>
         <img className="price-tag" src="./assets/price.png"/>
-        {/* <img className="overlay" src="./assets/overlay.png"/> */}
       </div>
     </div>
   );
