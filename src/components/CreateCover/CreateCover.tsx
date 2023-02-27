@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { nanoid } from "nanoid";
 
 interface coverCombo {
   title: string;
   cover: string;
   desc1: string;
   desc2: string;
+  id: string
 }
 
 export const CreateCover = ({
@@ -56,6 +58,7 @@ export const CreateCover = ({
               title: titleInput,
               desc1: descriptor1Input,
               desc2: descriptor2Input,
+              id: nanoid()
             })
           }
         >
