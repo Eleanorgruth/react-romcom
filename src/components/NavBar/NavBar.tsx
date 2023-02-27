@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import './NavBar.css'
 
 export const NavBar = ({ clearCreated }: { clearCreated: () => void}) => {
   return (
-    <div>
+    <div className='controls'>
       <NavLink to='/'>
         <button onClick={() => clearCreated()}>Home</button>
       </NavLink>
