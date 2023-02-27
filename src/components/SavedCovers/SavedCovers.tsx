@@ -1,5 +1,6 @@
 import React from "react";
 import { SingleCover } from "../SingleCover/SingleCover";
+import './SavedCovers'
 
 interface coverCombo {
   title: string;
@@ -15,5 +16,5 @@ export const SavedCovers = ({ savedCovers, deleteCover }: { savedCovers: coverCo
     return <SingleCover cover={cover} deleteCover={deleteCover}/>;
   });
 
-  return <div>{coverElements}</div>;
+  return <div className="saved-covers-section">{coverElements}</div>;
 };

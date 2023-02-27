@@ -1,0 +1,55 @@
+.main-cover {
+  height: 80vh;
+  margin: 4vh auto;
+  position: relative;
+  width: 30vw;
+}
+
+.cover-image,
+.overlay {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.cover-title,
+.tagline {
+  text-align: center;
+  color: #f4ebcd;
+  position: absolute;
+  width: 100%;
+}
+
+.cover-title {
+  bottom: .9em;
+  font-family: 'Playball', cursive;
+  font-size: 4.5em;
+  font-weight: normal;
+  line-height: 90%;
+  margin: 0;
+  padding: 0.1em;
+}
+
+.cover-title::first-letter {
+  font-size: 100px;
+}
+
+.tagline {
+  background: rgba(126, 84, 150, .5);
+  color: #fcf4dc;
+  bottom: 5px;
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  width: 22%;
+  right: 15px;
+  transform: rotate(10deg);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  filter: opacity(65%);
+}

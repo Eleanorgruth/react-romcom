@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { covers, titles, descriptors } from "../../data";
 import pic from "../../assets/bluebrocade.jpg";
 import { nanoid } from "nanoid";
+import './Random.css'
 
 interface coverCombo {
   title: string;
@@ -58,7 +59,7 @@ export const Random = ({
 
   return (
     <div>
-      <div>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
         <button onClick={() => randomize()}>Randomize</button>
         <button
           onClick={() => saveCover(title, cover, descriptor1, descriptor2, id)}
@@ -66,12 +67,14 @@ export const Random = ({
           Save Cover
         </button>
       </div>
-      <div>
-        {cover && <img src={cover}/>}
-        <p>{title}</p>
-        <p>
-          A {descriptor1} of {descriptor2}
-        </p>
+      <div className="main-cover">
+        {cover && <img className='cover-image' src={cover}/>}
+        <h2 className='cover-title'>{title}</h2>
+        <h3 className='tagline'>A tale of 
+          <span className='tagline-1'> {descriptor1}</span> and <span className='tagline-2'>{descriptor2}</span>
+        </h3>
+        <img className="price-tag" src="./assets/price.png"/>
+        {/* <img className="overlay" src="./assets/overlay.png"/> */}
       </div>
     </div>
   );

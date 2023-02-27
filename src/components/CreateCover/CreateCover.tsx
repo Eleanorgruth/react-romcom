@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { nanoid } from "nanoid";
+import './CreateCover.css'
 
 interface coverCombo {
   title: string;
